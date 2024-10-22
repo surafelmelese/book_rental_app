@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-22 12:30:39.802417",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "owner_name",
+  "email",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_owner"
+ ],
+ "fields": [
+  {
+   "description": "Enter the name of the book owner.",
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Owner Name",
+   "reqd": 1
+  },
+  {
+   "description": "Enter the owner's email address.",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email ",
+   "options": "email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Owner"
+  },
+  {
+   "fieldname": "parent_owner",
+   "fieldtype": "Link",
+   "label": "Parent Owner",
+   "options": "Owner"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-22 13:23:40.367830",
+ "modified_by": "Administrator",
+ "module": "Book Rental App",
+ "name": "Owner",
+ "nsm_parent_field": "parent_owner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-22 12:41:49.185348",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book",
+  "customer",
+  "rent_start_date",
+  "rent_end_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "description": "Select the book being rented.",
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Book",
+   "options": "Book",
+   "reqd": 1
+  },
+  {
+   "description": "Enter the name of the customer renting the book.",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer",
+   "reqd": 1
+  },
+  {
+   "description": "Enter the start date of the rental.",
+   "fieldname": "rent_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Rent Start Date",
+   "reqd": 1
+  },
+  {
+   "description": "Enter the end date of the rental.",
+   "fieldname": "rent_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Rent End Date",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "description": "Select the current status of the rental.",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nReturned"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-22 13:26:26.930647",
+ "modified_by": "Administrator",
+ "module": "Book Rental App",
+ "name": "Rental",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

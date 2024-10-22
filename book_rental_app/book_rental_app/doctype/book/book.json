@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-22 12:25:42.556517",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "author",
+  "category",
+  "quantity",
+  "rent_price",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_book",
+  "owner1"
+ ],
+ "fields": [
+  {
+   "description": "Enter the title of the book.",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "Enter the author's name.",
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Fiction\nNon-Fiction\nSci-Fi\nThriller\nMemoir\nDystopian\nComedy/Sci-Fi\nPhilosophy\nBiography",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "description": "Enter the available quantity of this book.",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity ",
+   "reqd": 1
+  },
+  {
+   "description": "Enter the rental price per day.",
+   "fieldname": "rent_price",
+   "fieldtype": "Currency",
+   "label": "Rent Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Book"
+  },
+  {
+   "fieldname": "parent_book",
+   "fieldtype": "Link",
+   "label": "Parent Book",
+   "options": "Book"
+  },
+  {
+   "fieldname": "owner1",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "Owner",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-10-22 13:21:57.908010",
+ "modified_by": "Administrator",
+ "module": "Book Rental App",
+ "name": "Book",
+ "nsm_parent_field": "parent_book",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

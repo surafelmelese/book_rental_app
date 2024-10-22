@@ -1,0 +1,20 @@
+[project]
+name = "book_rental_app"
+authors = [
+    { name = "Surafel Melese", email = "surafelmelese123@gmail.com"}
+]
+description = "Develop a Book Rental Application as an installable ERPNext module that allows users to rent books, with specific roles for book owners and system administrators. The module must leverage ERPNext’s customization capabilities (Doctypes, roles, permissions) and follow best practices for creating reusable modules in ERPNext."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
